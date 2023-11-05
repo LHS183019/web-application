@@ -1,0 +1,116 @@
+#finish
+{
+    background-color: rgb(215, 135, 222);
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    border: 1px black solid;
+
+}
+#fast
+{
+    border: 0px;
+    font-size: 50px;
+    color: rgb(115, 106, 247);
+    text-shadow: 10%;
+    text-align: center;
+}
+#yeah
+{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(196, 236, 255);
+    font-size: 37px;
+
+}
+#circle
+{
+    width: 400px;
+    height: 400px;
+    margin: 2em 1em 2em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(
+    rgb(246, 118, 250) 45deg, 
+    rgb(153, 199, 252) 45deg 90deg, 
+    rgb(246, 118, 250) 90deg 135deg , 
+    rgb(153, 199, 252)  135deg 180deg , 
+    rgb(246, 118, 250) 180deg 225deg , 
+    rgb(153, 199, 252)  225deg 270deg, 
+    rgb(246, 118, 250) 270deg 315deg , 
+    rgb(153, 199, 252)  315deg 360deg 
+    );
+    border-radius: 50%;
+}
+.container
+{
+    border: 2px black solid;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 203, 211);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#circle.active
+{
+    animation: rotation 2s ease-in;
+}
+#twenty
+{
+    border: 0;
+    margin: 20px;
+    padding: 0;
+    font-size: 40px;
+    text-shadow: 30%;
+    border-radius: 10%;
+    text-align: center;
+    background-color: bisque;
+    color: red;
+    visibility: hidden;
+}
+#twenty.correct
+{
+    visibility: visible;
+}
+#yeah.hidden
+{
+    visibility: hidden;
+}
+@keyframes rotation {
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(729deg);
+    }
+}
+@media screen and (min-height : 1024px) {
+    #circle
+    {
+        width: 450px;
+        height: 450px;
+    }
+    #finish
+    {
+        font-size: 50px;
+    }
+    #yeah
+    {
+        width: 200px;
+        height: 125px;
+        font-size: 42px;
+    }
+    #twenty
+    {
+        font-size: 40px;
+    }
+}
