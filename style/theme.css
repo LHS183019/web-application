@@ -1,0 +1,96 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:"Microsoft Yahei";
+}
+.root{
+    --PINK: #ffc9c9;
+    --LIGHT-PINK: #ffe4e4;
+    --DARK-PINK:#d0a1a8;
+    --BLUE: #9bc7f6;
+    --LIGHT-PURPLE: #8690f3;
+    --BROWN:#7f6566;
+    --BLUE-PURPLE:#99c8f4;
+    --GREEN:#b4c5ad;
+}
+.pixelart-to-css {
+    box-shadow: 80px 60px 0 0 rgba(0, 0, 0, 1), 90px 60px 0 0 rgba(0, 0, 0, 1), 100px 60px 0 0 rgba(0, 0, 0, 1), 110px 60px 0 0 rgba(0, 0, 0, 1), 80px 70px 0 0 rgba(0, 0, 0, 1), 90px 70px 0 0 rgba(0, 0, 0, 1), 100px 70px 0 0 rgba(0, 0, 0, 1), 110px 70px 0 0 rgba(0, 0, 0, 1), 120px 70px 0 0 rgba(0, 0, 0, 1), 70px 80px 0 0 rgba(0, 0, 0, 1), 90px 80px 0 0 rgba(0, 0, 0, 1), 100px 80px 0 0 rgba(0, 0, 0, 1), 120px 80px 0 0 rgba(0, 0, 0, 1), 70px 90px 0 0 rgba(0, 0, 0, 1), 80px 90px 0 0 rgba(0, 0, 0, 1), 100px 90px 0 0 rgba(0, 0, 0, 1), 120px 90px 0 0 rgba(0, 0, 0, 1), 60px 100px 0 0 rgba(0, 0, 0, 1), 70px 100px 0 0 rgba(0, 0, 0, 1), 110px 100px 0 0 rgba(0, 0, 0, 1), 120px 100px 0 0 rgba(0, 0, 0, 1), 60px 110px 0 0 rgba(0, 0, 0, 1), 70px 110px 0 0 rgba(0, 0, 0, 1), 110px 110px 0 0 rgba(0, 0, 0, 1), 120px 110px 0 0 rgba(0, 0, 0, 1), 50px 120px 0 0 rgba(0, 0, 0, 1), 70px 120px 0 0 rgba(0, 0, 0, 1), 80px 120px 0 0 rgba(0, 0, 0, 1), 90px 120px 0 0 rgba(0, 0, 0, 1), 100px 120px 0 0 rgba(0, 0, 0, 1), 110px 120px 0 0 rgba(0, 0, 0, 1), 120px 120px 0 0 rgba(0, 0, 0, 1), 50px 130px 0 0 rgba(0, 0, 0, 1), 80px 130px 0 0 rgba(0, 0, 0, 1), 90px 130px 0 0 rgba(0, 0, 0, 1), 120px 130px 0 0 rgba(0, 0, 0, 1), 50px 140px 0 0 rgba(0, 0, 0, 1), 60px 140px 0 0 rgba(0, 0, 0, 1), 70px 140px 0 0 rgba(0, 0, 0, 1), 80px 140px 0 0 rgba(0, 0, 0, 1), 90px 140px 0 0 rgba(0, 0, 0, 1), 120px 140px 0 0 rgba(0, 0, 0, 1), 130px 140px 0 0 rgba(0, 0, 0, 1), 60px 150px 0 0 rgba(0, 0, 0, 1), 70px 150px 0 0 rgba(0, 0, 0, 1), 80px 150px 0 0 rgba(0, 0, 0, 1), 90px 150px 0 0 rgba(0, 0, 0, 1), 100px 150px 0 0 rgba(0, 0, 0, 1), 130px 150px 0 0 rgba(0, 0, 0, 1), 140px 150px 0 0 rgba(0, 0, 0, 1), 100px 160px 0 0 rgba(0, 0, 0, 1), 110px 160px 0 0 rgba(0, 0, 0, 1), 120px 160px 0 0 rgba(0, 0, 0, 1), 130px 160px 0 0 rgba(0, 0, 0, 1), 140px 160px 0 0 rgba(0, 0, 0, 1);
+    height: 10px;
+    width: 10px;
+}
+.food-prize::before{
+    content: "MOP ";
+}
+.bg{
+    background-color: #ffc9c9;
+    padding: 2.5vh 1vw;
+}
+.main{
+    height: 80vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    border: 1px rgba(0, 0, 0, 0.808) solid;
+    background-color: #ffe4e4;
+    
+}
+.cart{
+    height: 10vh;
+}
+.menu{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    overflow-y: scroll;
+    border: rgba(0, 0, 0, 0.808) solid;
+    border-width: 0px 2px 1px 1px;
+}
+.category{
+    position: sticky;
+    background-color: #ffc9c9;
+    border: 1px  rgba(0, 0, 0, 0.808) solid;
+    border-width: 1px 0;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.food-item{
+    border-bottom: 1px rgba(54, 54, 54, 0.808) dashed;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #ffe4e4;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+.food-item:last-of-type{
+    border-bottom: 0px;
+}
+.food-operator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+.food-picture{
+    width: 30%;
+}
+.food-info{
+    
+}
+button{
+    font-size: minmax(12px,20px);
+    width: clamp(5px,5vw,30px);
+    height: clamp(5px,5vw,30px);
+    text-align: center;
+    border-radius: 50%;
+}
